@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registered User!"
+        android:textAppearance="@style/menu"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/menu"
+        android:text="You can access to file viewer"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="356dp"
+        android:layout_height="48dp"
+        android:background="@drawable/main_button1"
+        android:textAppearance="@style/sign_in"
+        android:text="continue"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="606dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

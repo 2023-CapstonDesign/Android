@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".webview"
+            android:exported="false" />
+        <activity
+            android:name=".facesuccess"
+            android:exported="false" />
+        <activity
+            android:name=".fileviewer"
+            android:exported="false" />
+        <activity
+            android:name=".facecheck_confirmation"
+            android:exported="false" />
+        <activity
+            android:name=".facedecryption"
+            android:exported="false" />
+        <activity
+            android:name=".motiondecryption"
+            android:exported="false" />
+        <activity
+            android:name=".gotofirst"
+            android:exported="false" />
+        <activity
+            android:name=".singin_complete"
+            android:exported="false" />
+        <activity
+            android:name=".fileinbox"
+            android:exported="false" />
+        <activity
+            android:name=".fileupload"
+            android:exported="false" />
+        <activity
+            android:name=".faceupload"
+            android:exported="false" />
+        <activity
+            android:name=".gotoweb"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".signin"
+            android:exported="false" />
+        <activity
+            android:name=".mainpage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

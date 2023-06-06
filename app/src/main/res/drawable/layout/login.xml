@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="365dp"
+        android:layout_height="49dp"
+        android:hint="  E-mail"
+        android:textAppearance="@style/label"
+        android:background="@drawable/main_button2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="365dp"
+        android:layout_height="49dp"
+        android:hint="  Password"
+        android:textAppearance="@style/label"
+        android:background="@drawable/main_button2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:src="@drawable/password"
+        tools:layout_editor_absoluteX="322dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="366dp"
+        android:layout_height="57dp"
+        android:background="@drawable/main_button1"
+        android:text="Login"
+        android:textAppearance="@style/sign_in"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="598dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        android:text="Login"
+        android:textAppearance="@style/title"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
